@@ -10,6 +10,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkgApp.controller.RetirementController">
    <bottom>
@@ -24,7 +25,10 @@
    <top>
       <HBox alignment="TOP_CENTER" prefHeight="45.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
-            <Label text="Retirement Calculator" />
+            <Label text="Retirement Calculator">
+               <font>
+                  <Font name="Elephant" size="20.0" />
+               </font></Label>
          </children>
       </HBox>
    </top>
@@ -72,7 +76,19 @@
                   <Insets />
                </GridPane.margin>
             </HBox>
-            <TextField fx:id="txtYearsToWork" prefHeight="25.0" prefWidth="62.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="txtYearsToWork" prefHeight="25.0" prefWidth="62.0" promptText="Please enter an integer" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="txtAnnualReturnWorking" prefHeight="25.0" prefWidth="62.0" promptText="Please enter a number" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <TextField fx:id="txtMonthlySSI" prefHeight="25.0" prefWidth="62.0" promptText="Please enter a number" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <TextField fx:id="txtRequiredIncome" prefHeight="25.0" prefWidth="62.0" promptText="Please enter a number" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="txtAnnualReturn" prefHeight="25.0" prefWidth="62.0" promptText="Please enter a number" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="txtYearsRetired" prefHeight="25.0" prefWidth="62.0" promptText="Please enter an integer" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="txtAmountToSave" editable="false" prefHeight="25.0" prefWidth="62.0" GridPane.columnIndex="1" />
+            <TextField fx:id="txtTotalAmountSaved" editable="false" prefHeight="25.0" prefWidth="62.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
          </children>
       </GridPane>
    </center>
